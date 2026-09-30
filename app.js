@@ -1,0 +1,2 @@
+document.querySelectorAll('[data-slide]').forEach(button => button.addEventListener('click', () => { const rail = document.querySelector('.project-rail'); rail.scrollBy({left: Number(button.dataset.slide) * rail.querySelector('figure').getBoundingClientRect().width, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'}); }));
+if (new URLSearchParams(location.search).has('embed')) document.documentElement.classList.add('embedded');
