@@ -33,7 +33,7 @@ main,.top,.foot{width:min(100% - 2 * var(--gutter),var(--max));margin-inline:aut
 .intro h1 em{color:#1b3fd9}
 .lead{max-width:60ch;margin-top:clamp(20px,3vw,32px);font-size:1.08em;color:#2c2e31}
 
-.toc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:clamp(36px,5vw,64px)}
+.toc{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:clamp(36px,5vw,64px)}
 .toc-item{display:grid;grid-template-columns:auto 1fr;grid-template-rows:auto auto auto;column-gap:14px;row-gap:2px;padding:20px 22px;background:#fff;border:1px solid var(--line);border-radius:16px;transition:transform .2s,box-shadow .2s,border-color .2s}
 .toc-n{grid-row:span 3;font-family:var(--serif);font-size:30px;line-height:1;color:var(--muted)}
 .toc-name{font-family:var(--serif);font-size:24px;line-height:1.15}
@@ -48,6 +48,7 @@ main,.top,.foot{width:min(100% - 2 * var(--gutter),var(--max));margin-inline:aut
   background:var(--p-bg);color:var(--p-ink);border-radius:var(--radius);padding:clamp(20px,4vw,56px);scroll-margin-top:20px;overflow:hidden}
 .p-carnet{--p-bg:#e9e3d2;--p-ink:#102c4b;--p-muted:#4d6177;--p-line:rgba(16,44,75,.18);--p-accent:#102c4b;--p-btn:#102c4b;--p-btn-ink:#f6f3e9}
 .p-atelier{--p-bg:#0a1d2d;--p-ink:#f4f1e8;--p-muted:#a9b6c3;--p-line:rgba(244,241,232,.18);--p-accent:#8fb0d6;--p-btn:#f4f1e8;--p-btn-ink:#0a1d2d}
+.p-enseigne{--p-bg:#152d51;--p-ink:#f3ecdf;--p-muted:#c3c9d6;--p-line:rgba(243,236,223,.2);--p-accent:#c99a3e;--p-btn:#b3302c;--p-btn-ink:#fbf7ef}
 .p-affiche{--p-bg:#f6c800;--p-ink:#111;--p-muted:#3b3200;--p-line:rgba(0,0,0,.2);--p-accent:#e0261f;--p-btn:#111;--p-btn-ink:#f6c800}
 
 .p-head{display:grid;grid-template-columns:auto 1fr auto;align-items:end;gap:12px 24px;padding-bottom:clamp(20px,3vw,32px);border-bottom:1px solid var(--p-line)}
@@ -97,6 +98,7 @@ main,.top,.foot{width:min(100% - 2 * var(--gutter),var(--max));margin-inline:aut
 .foot p{max-width:70ch}
 
 /* tablette */
+@media(max-width:1240px){.toc{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:1000px){
   .toc{grid-template-columns:1fr}
   .p-info{grid-template-columns:1fr 1fr}
